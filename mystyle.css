@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {font: '맑은 고딕', Gothic, sans-serif; margin: 0; padding: 0;}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#page-wrapper {
+    background-color: aqua;
+}
+
+#main-header {
+    background-color: white;
+    height: 100px;
+}
+
+#main-navigation {
+    background-color: white;
+    height: 100px;
+    position: relative;
+    border-top: 1px solid #C9C9C9;
+    border-bottom: 1px solid #C9C9C9;
+    text-align: center;
+}
+
+#content {
+    background-color: green;
+    height: 800px;
+}
+
+footer {
+    background-color: red;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+#topMenu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;    
+    left: 50%;    
+    transform: translate(-50%, -50%);
+
+}
+
+.menu-item {
+    font-family: "Dongle", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 60px;
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    padding: 5px 15 px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#topMenu li:last-child {
+    margin-right: 0;
+}
+
+.main-title {
+    text-align: center;
+    line-height: 100px;
+}
+
