@@ -20,6 +20,10 @@ body {
     background-color: yellow;
 }
 
+#article-header h3 {
+    margin-left: 20px;
+}
+
 #main-title {
     text-align: center;
     padding: 30px;
@@ -90,6 +94,33 @@ label:hover {
     margin-top: 3px;
 }
 
+#introduce-partner{
+    width: 690px;
+    height: 180px;
+    margin-left: 40px;
+    vertical-align: top;
+}
+
+#introduce-partner[open] {
+    width: 690px; 
+}
+
+#introduce-partner summary {
+    padding: 8px;
+    border-radius: 5px;
+    display: inline;
+}
+
+#introduce-partner p {
+    display: block;
+}
+
+#introduce-partner summary:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
 #introduce_myself details summary {
     padding: 8px;
     border-radius: 5px;
@@ -108,35 +139,15 @@ label:hover {
     margin: 40px 0;
 }
 
-#hobby details {
-    height: 200px;
-    margin-top: 20px;
-    display: block;
-    width: 350px;
-    margin-right: 20px;
-}
-
-#hobby details[open] {
-    width: 350px;
-}
-
 #hobby p {
     margin-top: 3px;
 }
 
-#hobby details summary {
-    padding: 8px;
-    border-radius: 5px;
-    display: inline;
+#hobby div p:nth-of-type(1) {
+    margin-top: 30px;
 }
 
-#hobby details summary:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-}
-
-#climbing {
+#climbing, #surfing {
     margin-top: 12px;
     display: flex;
     align-items: center;
@@ -153,7 +164,13 @@ label:hover {
     margin-bottom: 40px;
 }
 
-#climbing-article {
+#surfing img {
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+#climbing-article, #surfing-article {
     display: inline-block;
     vertical-align: top;
     margin-top: 40px;
@@ -161,11 +178,11 @@ label:hover {
     width: 400px;
 }
 
-#climbing-article[open] {
+#climbing-article[open], #surfing-article[open] {
     width: 400px;
 }
 
-#climbing-article p {
+#climbing-article p , #surfing-article p{
     margin-top: 3px;
 }
 
@@ -176,7 +193,14 @@ label:hover {
     margin-bottom: 20px;
 }
 
-#climbing-article summary:hover {
+#surfing-article summary {
+    display: inline;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#climbing-article summary:hover, #surfing-article summary:hover {
     cursor: pointer;
     background-color: black;
     color: white;
@@ -184,8 +208,83 @@ label:hover {
 
 #surfing {
     margin-left: 20px;
+}
+
+.partner-info {
+    display: flex;
+    align-items: center;
+}
+
+.partner-info img { 
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.partner-info div div p {
+    display: inline-block; 
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+#qna-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.qna-left p {
     margin-top: 40px;
 }
+
+.qna-content {
+    overflow: hidden;
+}
+
+.qna-left {
+    float: left;
+}
+
+.qna-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.qna-right p {
+    margin-bottom: 10px;
+}
+
+.qna-right h4 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: block;
+    margin-right: 200px;
+}
+
+.qna-right img {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.qna-content div div {
+    display: inline-block;
+}
+
+.qna-content div div img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.qna-content div div p {
+    display: inline-block;
+}
+
+#interview {
+    padding-right: 15px;
+    padding-left: 10px;
+    border: 1px solid #2354f3;
+    border-radius: 10px;
+}
+
 input { display: none;}
 
 input:nth-of-type(1) ~ div:nth-of-type(1) {display: none;}
